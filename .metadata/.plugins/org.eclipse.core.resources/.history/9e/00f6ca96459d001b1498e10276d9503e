@@ -1,0 +1,25 @@
+package aula3743ex;
+
+public class ContaPoupanca extends ContaBancaria{
+	
+	private String diaRendimento;
+	
+	ContaPoupanca cp = new ContaPoupanca();
+			
+	public String getDiaRendimento() {
+		return diaRendimento;
+	}
+
+
+
+	public void setDiaRendimento(String diaRendimento) {
+		this.diaRendimento = diaRendimento;
+	}
+
+	public void calcularNovoSaldo(double taxRendimento) {
+		double novoSaldo;
+		novoSaldo = cp.getSaldo() + taxRendimento*cp.getSaldo();
+		cp.setSaldo(novoSaldo);
+	}
+
+}

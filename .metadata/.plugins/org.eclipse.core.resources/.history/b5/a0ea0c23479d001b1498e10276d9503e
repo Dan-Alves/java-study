@@ -1,0 +1,33 @@
+package aula3743ex;
+
+public class ContaPoupanca extends ContaBancaria{
+	
+	private String diaRendimento;
+	
+	ContaBancaria cb = new ContaBancaria();
+			
+	public String getDiaRendimento() {
+		return diaRendimento;
+	}
+
+
+
+	public void setDiaRendimento(String diaRendimento) {
+		this.diaRendimento = diaRendimento;
+	}
+
+	public void calcularNovoSaldo(double taxRendimento) {
+		double novoSaldo;
+		novoSaldo = cb.getSaldo() + taxRendimento*cb.getSaldo();
+		cb.setSaldo(novoSaldo);
+	}
+	
+	public String toString() {
+        String s = "ContaPoupança[";
+        s += " diaRendimento: " + diaRendimento;
+        s += "; " + super.toString(); 
+        s += "]" ;
+        return s; 
+    }
+
+}

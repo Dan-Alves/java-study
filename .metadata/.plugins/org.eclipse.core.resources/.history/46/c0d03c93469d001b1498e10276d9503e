@@ -1,0 +1,28 @@
+package aula3743ex;
+
+public class ContaEspecial extends ContaBancaria{
+	
+	private double limite;
+
+	public double getLimite() {
+		return limite;
+	}
+
+	public void setLimite(double limite) {
+		this.limite = limite;
+	}
+	
+	public void sacarDinheiro(double valorSaque) {
+		
+		double saldoFinal;
+		
+		if(valorSaque > getSaldo())
+			return;
+		else {
+			saldoFinal = getSaldo() - valorSaque;
+			setSaldo(saldoFinal);
+		}
+			
+	}
+
+}

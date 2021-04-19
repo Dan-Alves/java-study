@@ -1,0 +1,11 @@
+package ex2;
+
+public class Teste {
+
+	public static void main(String[] args) {
+		
+		Contribuinte c = new Contribuinte();
+
+	}
+
+}

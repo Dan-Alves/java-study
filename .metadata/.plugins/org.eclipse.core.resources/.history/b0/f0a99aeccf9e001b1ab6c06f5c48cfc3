@@ -1,0 +1,46 @@
+package trabalhandoComStrings;
+
+public class exemplo1 {
+
+	public static void main(String[] args) {
+		
+		String s = "Anan";
+		
+        int repeticoes;
+        
+        repeticoes = contar(s);
+        
+        System.out.println(repeticoes);
+        
+	}
+
+	public static int contar(String s) {
+		
+		int cont = 0;
+		char[] letra;
+		letra = new char[s.length()];
+		boolean encontrou = false;
+				
+		for(int i = 0; i < s.length(); i++) {
+			
+			for(int j = 0; j < s.length(); j++) {
+				
+				for(int l = 0; l < s.length(); l++) {
+					if(s.charAt(j) == letra[l]) {
+						encontrou = true;
+						break;
+					}
+				}
+				if(s.charAt(i) == s.charAt(j) && !encontrou) {
+					cont++;
+					letra[j] = s.charAt(j);
+				}
+				
+			}
+		}
+		return cont;
+	
+	}
+	
+
+}

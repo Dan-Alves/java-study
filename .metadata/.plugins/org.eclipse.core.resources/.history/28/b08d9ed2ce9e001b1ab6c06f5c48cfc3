@@ -1,0 +1,26 @@
+package trabalhandoComStrings;
+
+public class exemplo1 {
+
+	public static void main(String[] args) {
+		
+		String s = "Ana";
+		
+        
+	}
+
+	public static int contar(String s) {
+		
+		int cont = 0;
+		
+		for(int i = 0; i < s.length(); i++) {
+			for(int j = 0; j < s.length(); j++) {
+				if(s.charAt(i) == s.charAt(j))
+					cont++;
+			}
+		}
+		
+	}
+	
+
+}

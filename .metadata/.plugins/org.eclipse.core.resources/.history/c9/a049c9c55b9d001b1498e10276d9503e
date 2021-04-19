@@ -1,0 +1,9 @@
+package ex2;
+
+public class PessoaJuridica extends Contribuinte{
+	
+	public double impostoPago(double rendaBrutaEmpresa) {
+		return rendaBrutaEmpresa / 10;
+	}
+	
+}
