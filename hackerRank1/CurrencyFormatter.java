@@ -9,6 +9,7 @@ public class CurrencyFormatter {
 	public static void main(String[] args) {
 
 		Scanner scanner = new Scanner(System.in);
+		scanner.useLocale(Locale.ENGLISH);
         double payment = scanner.nextDouble();
         scanner.close();
 
