@@ -34,6 +34,7 @@ public class Teste {
             contatos[i] = c;
 		}
 		
+		sc.close();		
 		agenda.setContatos(contatos);
         
         if (agenda != null){

@@ -42,6 +42,7 @@ static int repetido (String s)
 	    palavra = leitor.nextLine();
 	    vezes = repetido(palavra);
 	    System.out.println(vezes);
+	    leitor.close();
 	}
 }
 
